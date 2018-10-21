@@ -1,0 +1,7 @@
+{
+  "name": "FortunaFauna",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

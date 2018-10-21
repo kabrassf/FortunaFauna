@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-image">
+
+  <!-- This is the home page, where people will open the app to and be greeted by their pets.
+  It will eventually have a changeable background, most likely a counter at the top with how much
+  money you have, and of course pets (and maybe items). I'll have 1 global variable and 3 arrays-
+  a global money variable, an array for pets, and array for backgrounds, and and array for toys.
+  When you load up the app, a toy and pet are randomly generated. -->
+
+  <p>This is the home page, where people will open the app to and be greeted by their pets.
+      It will eventually have a changeable background, most likely a counter at the top with how much
+      money you have, and of course pets (and maybe items). I'll have 1 global variable and 3 arrays-
+      a global money variable, an array for pets, and array for backgrounds, and and array for toys.
+      When you load up the app, a toy and pet are randomly generated.</p>
+
+  <div text-center *ngIf = "petRand == '0'">
+    <img width="175" height="175" src="{{'assets/imgs/' + this.pets[0] + '.png'}}"> 
+  </div>
+
+  <div text-center *ngIf = "petRand == '1'">
+    <img src="{{'assets/imgs/' + this.pets[1] + '.png'}}"> 
+  </div>
+
+  <div text-center *ngIf = "petRand == '2'">
+      <img src="{{'assets/imgs/' + this.pets[2] + '.png'}}"> 
+    </div>
+
+  <div text-center *ngIf = "toyRand == '0'">
+      <img src="{{'assets/imgs/' + this.toys[0] + '.png'}}"> 
+  </div>
+
+  <div text-center *ngIf = "toyRand == '1'">
+      <img src="{{'assets/imgs/' + this.toys[1] + '.png'}}"> 
+  </div>
+
+  <div text-center *ngIf = "toyRand == '2'">
+      <img src="{{'assets/imgs/' + this.toys[2] + '.png'}}"> 
+  </div>
+
+  <p>Also, this is 80% placeholder art that I grabbed from previous projects. Only the toys and
+    the brown cat will be in the finished version. Along with hopefully customizeable backgrounds.
+  </p>
+
+  <!-- Note 1: I tried putting a variable in the array but it didn't like that so I made an if statement -->
+  <!-- Note 2: I now see the variable also re-rolls with every page refresh, so switching from, say, Shop
+  to Home rerolls the random number so the pet can change as well. Whoops -->
+  
+  <!-- <img src="{{'assets/imgs/' + this.pets[0] + '.png'}}">  -->
+
+  <!-- <ion-item *ngFor="let home of pets">{{pets}}</ion-item> -->
+</ion-content>
+
+
+
+<!--  <div *ngIf = "myRand == '0'; else elsetag">
+    <img src="{{'assets/imgs/' + this.pets[0] + '.png'}}"> 
+  </div>
+  <ng-template #elsetag>
+    <div>
+      <img src="{{'assets/imgs/' + this.pets[1] + '.png'}}"> 
+    </div>
+  </ng-template>-->

@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Shop
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-image">
+  <p>
+    I tried for an hour to change the background to an image. It shouldn't be that hard to do.
+    Anyway, there's going to be a cute cat here like those fat gold cats with their paws up like
+    you see in stores and then there's going to be an overlay popup with a list of purchaseable items like below.
+    <br>
+  </p>
+  <ion-card>
+      <img src="assets/imgs/year of the dog.png"/>
+      <ion-card-content>
+        <ion-card-title>
+          Two Dogs
+          </ion-card-title>
+        <p>
+          Two adorable pomeranians named Creampuff and Inkblot, respectively. 
+          How could you turn them down?
+        </p>
+        <br>
+        <h1>
+          Price: $200
+        </h1>
+        <br>
+        <button ion-button (click)="presentAlert(200)">Purchase</button>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <img src="assets/imgs/emp stone engraving.png"/>
+      <ion-card-content>
+        <ion-card-title>
+          Two Birds
+          </ion-card-title>
+        <p>
+          Two very colorful birds. They like being fed at regular times and being rubbed under their chins.
+        </p>
+        <br>
+        <h1>
+          Price: $150
+        </h1>
+        <br>
+        <button ion-button (click)="presentAlert(150)">Purchase</button>
+      </ion-card-content>
+    </ion-card>
+</ion-content>

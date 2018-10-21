@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <br>
+    <ion-item>
+      <ion-label>Pets on the Home Screen</ion-label>
+      <ion-range min="1" max="4" step="1" snaps="true" [(ngModel)]="petsOnScreen" color="primary" pin="true">
+        <ion-label range-left>1</ion-label>
+        <ion-label range-right>4</ion-label>
+      </ion-range>
+    </ion-item>
+    <p>I can't actually think now of what I'd need a Settings menu for unless I add pop up notifications
+    as a feature so this might change into just an About screen.
+    </p>
+
+    <ion-label>About</ion-label>
+    <p>This project is for Mobile App Development, CSCI 458 and is made by Kaylin Brassfield solo. Think of 
+    this prototype as sort of a Tamogatchi type game, where you care for cute pets and can buy more.</p>
+
+  </ion-list>
+</ion-content>
